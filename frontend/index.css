@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+body{
+    height: 100vh; 
+    background: linear-gradient(123deg, #71b8e7,#9b59b6);
+    font-family: 'Poppins',sans-serif;
+}
+.studentupdatecard{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.studentcard {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0 auto;
+}
+.studentcontainer , .studentupdatecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; 
+    max-width: 700px;
+    width: 100%;
+    background: #f5f3f3;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.studentcontainer  .title , .studentupdatecontainer .title{
+    font-size: 25px;
+    font-weight: 500; 
+    position: relative;
+}
+.studentcontainer .title::before  , .studentupdatecontainer .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(123deg, #71b8e7,#9b59b6);
+}
+.studentcontainer form .user_details  , .studentupdatecontainer form .update_user_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user_details .input_pox , form .update_user_details .input_pox{
+    margin-bottom: 15px;
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user_details .input_pox .datails  , .update_user_details .input_pox .datails {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user_details .input_pox input,select  , .update_user_details .input_pox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+}
+.user_details .input_pox input:focus,
+.user_details .input_pox input:valid,
+.update_user_details .input_pox input:focus,
+.update_user_details .input_pox input:valid{
+border-color: #9b59b6;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(123deg, #71b8e7,#9b59b6);
+
+}
+form .button input :hover{
+    background: linear-gradient(-123deg, #71b8e7,#9b59b6);
+}
+
+.updatebtn , .deletebtn{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #222121;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(123deg, #8cc5eb,#cea4df);
+}

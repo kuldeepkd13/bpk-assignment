@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #1b1b1b;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #aaa8a8;
+    }
+
+    
+
+    
+  </style>
+</head>
+<body>
+
+    <div class="studentcard">
+        <div class="studentcontainer">
+            <div class="title">Add Student Details Form</div>
+            <form id="studentForm">
+                <div class="user_details">
+                    <div class="input_pox">
+                        <span class="datails">First Name</span>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">Last Name</span>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">Student ID</span>
+                        <input type="text" id="studentId" name="studentId" placeholder="Enter Student ID" required>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">DOB</span>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">Gender</span>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">Address</span>
+                        <input type="text" id="address" name="address" placeholder="Enter Address" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Confirm">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="studentupdatecard">
+        <div class="studentupdatecontainer">
+            <div class="title">Update Student Details Form</div>
+            <form id="studentupdateForm">
+                <div class="update_user_details">
+                    <div class="input_pox">
+                        <span class="datails">First Name</span>
+                        <input type="text" id="firstName1" name="firstName" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">Last Name</span>
+                        <input type="text" id="lastName1" name="lastName" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">Student ID</span>
+                        <input type="text" id="studentId1" name="studentId" placeholder="Enter Student ID" required>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">DOB</span>
+                        <input type="date" id="dob1" name="dob" required>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">Gender</span>
+                        <select id="gender1" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input_pox">
+                        <span class="datails">Address</span>
+                        <input type="text" id="address1" name="address" placeholder="Enter Address" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Update">
+                </div>
+            </form>
+        </div>
+    </div>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Student ID</th>
+        <th>Dob</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Student data will be added here dynamically -->
+    </tbody>
+  </table>
+
+ 
+
+  <script>
+    
+  </script>
+
+</body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="index.js"></script>
+</html>
