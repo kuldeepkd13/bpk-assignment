@@ -1,5 +1,5 @@
 const studentForm = document.getElementById('studentForm');
-const url = "http://localhost:4500/Student/";
+const url = "https://studentmanagement-1phx.onrender.com/Student/";
 
 studentForm.addEventListener("submit", (e) => {
     e.preventDefault();
