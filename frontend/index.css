@@ -118,3 +118,24 @@ form .button input :hover{
     letter-spacing: 1px;
     background: linear-gradient(123deg, #8cc5eb,#cea4df);
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  table, th, td {
+    border: 1px solid #1b1b1b;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #aaa8a8;
+  }
+
+  
